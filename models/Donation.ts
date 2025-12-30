@@ -6,7 +6,7 @@ export interface IDonation extends Document {
   email: string;
   phone: string;
   amount: number;
-  paymentMethod: 'card' | 'bank' | 'crypto';
+  paymentMethod: 'card' | 'bank' | 'crypto' | 'cashapp' | 'paypal';
   message: string;
   createdAt: Date;
 }
@@ -36,7 +36,7 @@ const DonationSchema: Schema = new Schema(
     },
     paymentMethod: {
       type: String,
-      enum: ['card', 'bank', 'crypto'],
+      enum: ['card', 'bank', 'crypto', 'cashapp', 'paypal'],
       required: true,
     },
     message: {
@@ -50,7 +50,7 @@ const DonationSchema: Schema = new Schema(
 );
 
 const Donation: Model<IDonation> =
-  mongoose.models.Donation || mongoose.model<IDonation>('Donation', DonationSchema);
+  mongoose.models.UnitedHopeDonation || mongoose.model<IDonation>('UnitedHopeDonation', DonationSchema, 'unitedhopedonations');
 
 export default Donation;
 

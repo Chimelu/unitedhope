@@ -54,7 +54,7 @@ const ProjectSchema: Schema = new Schema(
 );
 
 const Project: Model<IProject> =
-  mongoose.models.Project || mongoose.model<IProject>('Project', ProjectSchema);
+  mongoose.models.UnitedHopeProject || mongoose.model<IProject>('UnitedHopeProject', ProjectSchema, 'unitedhopeprojects');
 
 export default Project;
 

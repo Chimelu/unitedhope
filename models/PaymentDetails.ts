@@ -80,7 +80,7 @@ const PaymentDetailsSchema: Schema = new Schema(
 );
 
 const PaymentDetails: Model<IPaymentDetails> =
-  mongoose.models.PaymentDetails || mongoose.model<IPaymentDetails>('PaymentDetails', PaymentDetailsSchema);
+  mongoose.models.UnitedHopePaymentDetails || mongoose.model<IPaymentDetails>('UnitedHopePaymentDetails', PaymentDetailsSchema, 'unitedhopepaymentdetails');
 
 export default PaymentDetails;
 
