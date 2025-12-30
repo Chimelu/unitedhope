@@ -96,12 +96,6 @@ function DonatePageContent() {
       swift: string;
       iban: string;
     }>;
-    crypto: Array<{
-      _id: string;
-      currency: string;
-      walletAddress: string;
-      network: string;
-    }>;
     cashapp: Array<{
       _id: string;
       cashTag: string;
@@ -112,7 +106,6 @@ function DonatePageContent() {
     }>;
   }>({
     bank: [],
-    crypto: [],
     cashapp: [],
     paypal: [],
   });
@@ -125,12 +118,10 @@ function DonatePageContent() {
         const data = await response.json();
         if (data.paymentDetails) {
           const bankDetails = data.paymentDetails.filter((pd: any) => pd.type === 'bank');
-          const cryptoDetails = data.paymentDetails.filter((pd: any) => pd.type === 'crypto');
           const cashappDetails = data.paymentDetails.filter((pd: any) => pd.type === 'cashapp');
           const paypalDetails = data.paymentDetails.filter((pd: any) => pd.type === 'paypal');
           setPaymentDetails({
             bank: bankDetails,
-            crypto: cryptoDetails,
             cashapp: cashappDetails,
             paypal: paypalDetails,
           });
@@ -408,7 +399,7 @@ function DonatePageContent() {
                   <label className="block text-sm font-medium text-white mb-3">
                     Select Payment Method *
                   </label>
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid md:grid-cols-3 gap-4">
                     <button
                       type="button"
                       onClick={() => setPaymentMethod('bank')}
@@ -429,19 +420,37 @@ function DonatePageContent() {
 
                     <button
                       type="button"
-                      onClick={() => setPaymentMethod('crypto')}
+                      onClick={() => setPaymentMethod('cashapp')}
                       className={`p-4 rounded-lg border-2 transition-colors ${
-                        paymentMethod === 'crypto'
+                        paymentMethod === 'cashapp'
                           ? 'border-red-600 bg-red-600/20'
                           : 'border-red-700 bg-red-800/50 hover:border-red-600'
                       }`}
                     >
                       <div className="text-center">
-                        <svg className={`w-12 h-12 mx-auto mb-2 ${paymentMethod === 'crypto' ? 'text-red-500' : 'text-gray-200'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <svg className={`w-12 h-12 mx-auto mb-2 ${paymentMethod === 'cashapp' ? 'text-red-500' : 'text-gray-200'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
-                        <div className={`font-semibold ${paymentMethod === 'crypto' ? 'text-white' : 'text-white'}`}>Cryptocurrency</div>
-                        <div className={`text-sm mt-1 ${paymentMethod === 'crypto' ? 'text-gray-100' : 'text-gray-200'}`}>BTC, ETH, USDT, USDC</div>
+                        <div className={`font-semibold ${paymentMethod === 'cashapp' ? 'text-white' : 'text-white'}`}>CashApp</div>
+                        <div className={`text-sm mt-1 ${paymentMethod === 'cashapp' ? 'text-gray-100' : 'text-gray-200'}`}>Send via CashApp</div>
+                      </div>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => setPaymentMethod('paypal')}
+                      className={`p-4 rounded-lg border-2 transition-colors ${
+                        paymentMethod === 'paypal'
+                          ? 'border-red-600 bg-red-600/20'
+                          : 'border-red-700 bg-red-800/50 hover:border-red-600'
+                      }`}
+                    >
+                      <div className="text-center">
+                        <svg className={`w-12 h-12 mx-auto mb-2 ${paymentMethod === 'paypal' ? 'text-red-500' : 'text-gray-200'}`} fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.133zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.032.152-.056.231-.23 1.28-1.003 2.543-2.259 3.594-.49.41-1.08.768-1.752 1.07-.36.16-.75.29-1.16.39-.4.1-.81.15-1.22.15h-2.99c-.3 0-.56.22-.61.52l-1.19 7.58a.42.42 0 0 0 .42.48h2.78c.24 0 .45-.18.49-.42l.85-5.43a.96.96 0 0 1 .95-.81h.58c3.76 0 6.71-1.58 7.92-4.72.36-1.15.42-2.18.24-3.08z"/>
+                        </svg>
+                        <div className={`font-semibold ${paymentMethod === 'paypal' ? 'text-white' : 'text-white'}`}>PayPal</div>
+                        <div className={`text-sm mt-1 ${paymentMethod === 'paypal' ? 'text-gray-100' : 'text-gray-200'}`}>Pay with PayPal</div>
                       </div>
                     </button>
                   </div>
@@ -547,46 +556,6 @@ function DonatePageContent() {
                   </div>
                 )}
 
-                {/* Crypto Wallet Addresses */}
-                {paymentMethod === 'crypto' && (
-                  <div className="p-4 bg-white/90 rounded-lg border-2 border-red-600">
-                    <h3 className="font-semibold text-gray-900 mb-4">Cryptocurrency Wallet Addresses</h3>
-                    {paymentDetails.crypto.length === 0 ? (
-                      <p className="text-gray-600 text-sm">No cryptocurrency wallet addresses available. Please contact support.</p>
-                    ) : (
-                      <div className="space-y-4">
-                        {paymentDetails.crypto.map((crypto) => (
-                          <div key={crypto._id}>
-                            <label className="block text-sm font-medium text-gray-900 mb-2">
-                              {crypto.currency} {crypto.network && `(${crypto.network})`}
-                            </label>
-                            <div className="flex items-center gap-2">
-                              <input
-                                type="text"
-                                value={crypto.walletAddress}
-                                readOnly
-                                className="flex-1 px-4 py-2 bg-white border-2 border-gray-300 rounded-lg font-mono text-sm text-gray-900"
-                              />
-                              <button
-                                type="button"
-                                onClick={() => copyToClipboard(crypto.walletAddress, `${crypto.currency} address`)}
-                                className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors text-sm font-semibold"
-                              >
-                                Copy
-                              </button>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                    <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded">
-                      <p className="text-xs text-gray-800">
-                        <strong>Note:</strong> After sending cryptocurrency, please email us at info@unitedhope.org 
-                        with your transaction hash. You can download our impact report from the Reports page.
-                      </p>
-                    </div>
-                  </div>
-                )}
 
                 {/* CashApp Payment Details */}
                 {paymentMethod === 'cashapp' && (

@@ -135,53 +135,53 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden border-t border-gray-800">
-            <div className="px-4 pt-2 pb-4 space-y-1 bg-gray-900">
+          <div className="lg:hidden border-t border-red-700">
+            <div className="px-4 pt-2 pb-4 space-y-1 bg-white">
               <Link
                 href="/"
-                className="block px-3 py-2 text-base font-medium uppercase hover:bg-gray-800 rounded-md"
+                className="block px-3 py-2 text-base font-medium uppercase text-red-900 hover:bg-red-600 hover:text-white rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/donate"
-                className="block px-3 py-2 text-base font-medium uppercase hover:bg-gray-800 rounded-md"
+                className="block px-3 py-2 text-base font-medium uppercase text-red-900 hover:bg-red-600 hover:text-white rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Donate
               </Link>
               <Link
                 href="/about"
-                className="block px-3 py-2 text-base font-medium uppercase hover:bg-gray-800 rounded-md"
+                className="block px-3 py-2 text-base font-medium uppercase text-red-900 hover:bg-red-600 hover:text-white rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/contact"
-                className="block px-3 py-2 text-base font-medium uppercase hover:bg-gray-800 rounded-md"
+                className="block px-3 py-2 text-base font-medium uppercase text-red-900 hover:bg-red-600 hover:text-white rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Contact
               </Link>
               <Link
                 href="/faq"
-                className="block px-3 py-2 text-base font-medium uppercase hover:bg-gray-800 rounded-md"
+                className="block px-3 py-2 text-base font-medium uppercase text-red-900 hover:bg-red-600 hover:text-white rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 FAQ
               </Link>
               <Link
                 href="/blog"
-                className="block px-3 py-2 text-base font-medium uppercase hover:bg-gray-800 rounded-md"
+                className="block px-3 py-2 text-base font-medium uppercase text-red-900 hover:bg-red-600 hover:text-white rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Blog
               </Link>
               <Link
                 href="/legal"
-                className="block px-3 py-2 text-base font-medium uppercase hover:bg-gray-800 rounded-md"
+                className="block px-3 py-2 text-base font-medium uppercase text-red-900 hover:bg-red-600 hover:text-white rounded-md transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Legal
