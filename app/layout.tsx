@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   description: "Providing hope and support to communities across the United States. Donate today to make a difference.",
   keywords: "donation, charity, support, community, hope, assistance, help, united states, usa",
   icons: {
-    icon: '/logo.jpeg',
-    shortcut: '/logo.jpeg',
-    apple: '/logo.jpeg',
+    icon: '/icon.png',
+    shortcut: '/icon.png',
+    apple: '/icon.png',
   },
 };
 
