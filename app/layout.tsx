@@ -25,6 +25,28 @@ export const metadata: Metadata = {
     shortcut: '/icon.png',
     apple: '/icon.png',
   },
+  openGraph: {
+    title: "UnitedHope - Donation Website",
+    description: "Providing hope and support to communities across the United States. Donate today to make a difference.",
+    url: "https://unitedhopefoundation.com",
+    siteName: "UnitedHope",
+    images: [
+      {
+        url: '/logo.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'UnitedHope Logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "UnitedHope - Donation Website",
+    description: "Providing hope and support to communities across the United States. Donate today to make a difference.",
+    images: ['/logo.jpeg'],
+  },
 };
 
 export default function RootLayout({
