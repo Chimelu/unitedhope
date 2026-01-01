@@ -68,7 +68,7 @@ export const emailTemplates = {
               
               <div class="footer">
                 <p>UnitedHope Foundation</p>
-                <p>Email: admin@unitedhopefoundation.com | Phone: +12136096521</p>
+                <p>Email: admin@unitedhopefoundation.com | Phone: (913) 253-6302</p>
                 <p>&copy; ${new Date().getFullYear()} UnitedHope. All rights reserved.</p>
               </div>
             </div>
@@ -97,7 +97,7 @@ export const emailTemplates = {
       The UnitedHope Team
       
       UnitedHope Foundation
-      Email: admin@unitedhopefoundation.com | Phone: +12136096521
+      Email: admin@unitedhopefoundation.com | Phone: (913) 253-6302
     `,
   }),
 
@@ -145,7 +145,7 @@ export const emailTemplates = {
               
               <div class="footer">
                 <p>UnitedHope Foundation</p>
-                <p>Email: admin@unitedhopefoundation.com | Phone: +12136096521</p>
+                <p>Email: admin@unitedhopefoundation.com | Phone: (913) 253-6302</p>
                 <p>&copy; ${new Date().getFullYear()} UnitedHope. All rights reserved.</p>
               </div>
             </div>
@@ -174,7 +174,7 @@ export const emailTemplates = {
       The UnitedHope Team
       
       UnitedHope Foundation
-      Email: admin@unitedhopefoundation.com | Phone: +12136096521
+      Email: admin@unitedhopefoundation.com | Phone: (913) 253-6302
     `,
   }),
 
@@ -213,7 +213,7 @@ export const emailTemplates = {
                   <p style="margin: 10px 0;">${message.replace(/\n/g, '<br>')}</p>
                 </div>
                 
-                <p>Our team typically responds within 24-48 hours. If your inquiry is urgent, please feel free to call us at +12136096521.</p>
+                <p>Our team typically responds within 24-48 hours. If your inquiry is urgent, please feel free to call us at (913) 253-6302.</p>
                 
                 <p>We appreciate your interest in UnitedHope and look forward to assisting you.</p>
                 
@@ -222,7 +222,7 @@ export const emailTemplates = {
                 
                 <div class="footer">
                   <p>UnitedHope Foundation</p>
-                  <p>Email: admin@unitedhopefoundation.com | Phone: +12136096521</p>
+                  <p>Email: admin@unitedhopefoundation.com | Phone: (913) 253-6302</p>
                   <p>&copy; ${new Date().getFullYear()} UnitedHope. All rights reserved.</p>
                 </div>
               </div>
@@ -241,7 +241,7 @@ export const emailTemplates = {
         Subject: ${subject}
         ${message}
         
-        Our team typically responds within 24-48 hours. If your inquiry is urgent, please feel free to call us at +12136096521.
+        Our team typically responds within 24-48 hours. If your inquiry is urgent, please feel free to call us at (913) 253-6302.
         
         We appreciate your interest in UnitedHope and look forward to assisting you.
         
@@ -249,7 +249,7 @@ export const emailTemplates = {
         The UnitedHope Team
         
         UnitedHope Foundation
-        Email: admin@unitedhopefoundation.com | Phone: +12136096521
+        Email: admin@unitedhopefoundation.com | Phone: (913) 253-6302
       `,
     },
     // Email to admin (notification)
@@ -290,7 +290,7 @@ export const emailTemplates = {
                 
                 <div class="footer">
                   <p>UnitedHope Foundation</p>
-                  <p>Email: admin@unitedhopefoundation.com | Phone: +12136096521</p>
+                  <p>Email: admin@unitedhopefoundation.com | Phone: (913) 253-6302</p>
                 </div>
               </div>
             </div>
