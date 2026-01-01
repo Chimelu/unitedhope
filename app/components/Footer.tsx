@@ -82,30 +82,30 @@ export default function Footer() {
               <div>
                 <p className="text-gray-500 text-sm uppercase mb-1">General Questions:</p>
                 <a 
-                  href="mailto:info@unitedhope.org" 
+                  href="mailto:admin@unitedhopefoundation.com" 
                   className="text-white hover:text-red-500 transition-colors text-sm md:text-base"
                 >
-                  info@unitedhope.org
+                  admin@unitedhopefoundation.com
                 </a>
               </div>
               
               <div>
                 <p className="text-gray-500 text-sm uppercase mb-1">For Press:</p>
                 <a 
-                  href="mailto:press@unitedhope.org" 
+                  href="mailto:admin@unitedhopefoundation.com" 
                   className="text-white hover:text-red-500 transition-colors text-sm md:text-base"
                 >
-                  press@unitedhope.org
+                  admin@unitedhopefoundation.com
                 </a>
               </div>
               
               <div>
                 <p className="text-gray-500 text-sm uppercase mb-1">For Partnership:</p>
                 <a 
-                  href="mailto:partnerships@unitedhope.org" 
+                  href="mailto:admin@unitedhopefoundation.com" 
                   className="text-white hover:text-red-500 transition-colors text-sm md:text-base"
                 >
-                  partnerships@unitedhope.org
+                  admin@unitedhopefoundation.com
                 </a>
               </div>
             </div>

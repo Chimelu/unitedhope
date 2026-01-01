@@ -549,7 +549,7 @@ function DonatePageContent() {
 
                     <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded">
                       <p className="text-xs text-gray-800">
-                        <strong>Note:</strong> After making a bank transfer, please email us at info@unitedhope.org 
+                        <strong>Note:</strong> After making a bank transfer, please email us at admin@unitedhopefoundation.com 
                         with your transaction details. You can download our impact report from the Reports page.
                       </p>
                     </div>
@@ -591,7 +591,7 @@ function DonatePageContent() {
                     )}
                     <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded">
                       <p className="text-xs text-gray-800">
-                        <strong>Note:</strong> After sending via CashApp, please email us at info@unitedhope.org 
+                        <strong>Note:</strong> After sending via CashApp, please email us at admin@unitedhopefoundation.com 
                         with your transaction details. You can download our impact report from the Reports page.
                       </p>
                     </div>
@@ -642,7 +642,7 @@ function DonatePageContent() {
                     )}
                     <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded">
                       <p className="text-xs text-gray-800">
-                        <strong>Note:</strong> After sending via PayPal, please email us at info@unitedhope.org 
+                        <strong>Note:</strong> After sending via PayPal, please email us at admin@unitedhopefoundation.com 
                         with your transaction details. You can download our impact report from the Reports page.
                       </p>
                     </div>

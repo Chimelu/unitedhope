@@ -103,11 +103,11 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-2">Email</h3>
-                  <a href="mailto:info@unitedhope.org" className="text-red-500 hover:text-yellow-300 font-medium block mb-1">
-                    info@unitedhope.org
+                  <a href="mailto:admin@unitedhopefoundation.com" className="text-red-500 hover:text-yellow-300 font-medium block mb-1">
+                    admin@unitedhopefoundation.com
                   </a>
-                  <a href="mailto:info@unitedhope.org" className="text-red-500 hover:text-yellow-300 font-medium block">
-                    info@unitedhope.org
+                  <a href="mailto:admin@unitedhopefoundation.com" className="text-red-500 hover:text-yellow-300 font-medium block">
+                    admin@unitedhopefoundation.com
                   </a>
                 </div>
               </div>

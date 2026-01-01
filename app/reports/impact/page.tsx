@@ -124,7 +124,7 @@ IMPACT METRICS
 - Projects Funded: ${Math.floor(report.totalAmount / 50000)}
 - Communities Reached: ${Math.floor(report.totalAmount / 500000)}
 
-For detailed financial statements, please contact: info@unitedhope.org
+For detailed financial statements, please contact: admin@unitedhopefoundation.com
 
 © ${new Date().getFullYear()} UnitedHope Foundation. All rights reserved.
     `;
@@ -269,8 +269,8 @@ For detailed financial statements, please contact: info@unitedhope.org
               <div className="mt-6 p-4 bg-red-50 rounded-lg border border-red-200">
                 <p className="text-sm">
                   <strong>Need a custom report?</strong> Contact us at{' '}
-                  <a href="mailto:info@unitedhope.org" className="text-red-600 hover:underline">
-                    info@unitedhope.org
+                  <a href="mailto:admin@unitedhopefoundation.com" className="text-red-600 hover:underline">
+                    admin@unitedhopefoundation.com
                   </a>{' '}
                   for specific donation details or historical data.
                 </p>

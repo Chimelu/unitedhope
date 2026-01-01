@@ -661,7 +661,7 @@ export default function AdminPage() {
                     required
                     value={paymentFormData.email}
                     onChange={(e) => setPaymentFormData({ ...paymentFormData, email: e.target.value })}
-                    placeholder="donations@unitedhope.org"
+                    placeholder="admin@unitedhopefoundation.com"
                     className="w-full px-4 py-2 bg-white/90 border-2 border-red-600 rounded-lg focus:border-red-600 focus:outline-none text-gray-900"
                   />
                 </div>

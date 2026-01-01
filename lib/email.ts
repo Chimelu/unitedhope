@@ -24,7 +24,7 @@ export const verifyEmailConnection = async () => {
 // Email templates
 export const emailTemplates = {
   donationConfirmation: (donorName: string, amount: number, paymentMethod: string) => ({
-    subject: 'Thank You for Your Donation - HopeForUA',
+    subject: 'Thank You for Your Donation - UnitedHope',
     html: `
       <!DOCTYPE html>
       <html>
@@ -43,13 +43,13 @@ export const emailTemplates = {
         <body>
           <div class="container">
             <div class="header">
-              <h1>HopeForUA</h1>
+              <h1>UnitedHope</h1>
               <p>Thank You for Your Generous Donation</p>
             </div>
             <div class="content">
               <p>Dear ${donorName},</p>
               
-              <p>We are incredibly grateful for your generous donation of <strong>$${amount.toLocaleString()}</strong> to HopeForUA.</p>
+              <p>We are incredibly grateful for your generous donation of <strong>$${amount.toLocaleString()}</strong> to UnitedHope.</p>
               
               <div class="amount-box">
                 <p style="margin: 0;"><strong>Donation Details:</strong></p>
@@ -64,12 +64,12 @@ export const emailTemplates = {
               <p>Thank you for being part of our mission. Together, we are making a difference.</p>
               
               <p>With gratitude,<br>
-              <strong>The HopeForUA Team</strong></p>
+              <strong>The UnitedHope Team</strong></p>
               
               <div class="footer">
-                <p>HopeForUA Foundation</p>
-                <p>Email: hopeeforua@gmail.com | Phone: +12136096521</p>
-                <p>&copy; ${new Date().getFullYear()} HopeForUA. All rights reserved.</p>
+                <p>UnitedHope Foundation</p>
+                <p>Email: admin@unitedhopefoundation.com | Phone: +12136096521</p>
+                <p>&copy; ${new Date().getFullYear()} UnitedHope. All rights reserved.</p>
               </div>
             </div>
           </div>
@@ -77,11 +77,11 @@ export const emailTemplates = {
       </html>
     `,
     text: `
-      Thank You for Your Donation - HopeForUA
+      Thank You for Your Donation - UnitedHope
       
       Dear ${donorName},
       
-      We are incredibly grateful for your generous donation of $${amount.toLocaleString()} to HopeForUA.
+      We are incredibly grateful for your generous donation of $${amount.toLocaleString()} to UnitedHope.
       
       Donation Details:
       - Amount: $${amount.toLocaleString()}
@@ -94,15 +94,15 @@ export const emailTemplates = {
       Thank you for being part of our mission. Together, we are making a difference.
       
       With gratitude,
-      The HopeForUA Team
+      The UnitedHope Team
       
-      HopeForUA Foundation
-      Email: hopeeforua@gmail.com | Phone: +12136096521
+      UnitedHope Foundation
+      Email: admin@unitedhopefoundation.com | Phone: +12136096521
     `,
   }),
 
   newsletterSubscription: (subscriberEmail: string) => ({
-    subject: 'Welcome to HopeForUA Newsletter',
+    subject: 'Welcome to UnitedHope Newsletter',
     html: `
       <!DOCTYPE html>
       <html>
@@ -119,11 +119,11 @@ export const emailTemplates = {
         <body>
           <div class="container">
             <div class="header">
-              <h1>HopeForUA</h1>
+              <h1>UnitedHope</h1>
               <p>Welcome to Our Newsletter</p>
             </div>
             <div class="content">
-              <p>Thank you for subscribing to the HopeForUA newsletter!</p>
+              <p>Thank you for subscribing to the UnitedHope newsletter!</p>
               
               <p>We're excited to have you join our community. You'll now receive regular updates about:</p>
               
@@ -134,19 +134,19 @@ export const emailTemplates = {
                 <li>Ways you can continue to support our mission</li>
               </ul>
               
-              <p>Your support means everything to us, and we're grateful to have you as part of the HopeForUA family.</p>
+              <p>Your support means everything to us, and we're grateful to have you as part of the UnitedHope family.</p>
               
               <p>If you have any questions or would like to learn more about our work, please don't hesitate to reach out to us.</p>
               
-              <p>Thank you for your interest in HopeForUA!</p>
+              <p>Thank you for your interest in UnitedHope!</p>
               
               <p>Best regards,<br>
-              <strong>The HopeForUA Team</strong></p>
+              <strong>The UnitedHope Team</strong></p>
               
               <div class="footer">
-                <p>HopeForUA Foundation</p>
-                <p>Email: hopeeforua@gmail.com | Phone: +12136096521</p>
-                <p>&copy; ${new Date().getFullYear()} HopeForUA. All rights reserved.</p>
+                <p>UnitedHope Foundation</p>
+                <p>Email: admin@unitedhopefoundation.com | Phone: +12136096521</p>
+                <p>&copy; ${new Date().getFullYear()} UnitedHope. All rights reserved.</p>
               </div>
             </div>
           </div>
@@ -154,9 +154,9 @@ export const emailTemplates = {
       </html>
     `,
     text: `
-      Welcome to HopeForUA Newsletter
+      Welcome to UnitedHope Newsletter
       
-      Thank you for subscribing to the HopeForUA newsletter!
+      Thank you for subscribing to the UnitedHope newsletter!
       
       We're excited to have you join our community. You'll now receive regular updates about:
       - Our latest projects and initiatives
@@ -164,24 +164,24 @@ export const emailTemplates = {
       - Upcoming events and opportunities to get involved
       - Ways you can continue to support our mission
       
-      Your support means everything to us, and we're grateful to have you as part of the HopeForUA family.
+      Your support means everything to us, and we're grateful to have you as part of the UnitedHope family.
       
       If you have any questions or would like to learn more about our work, please don't hesitate to reach out to us.
       
-      Thank you for your interest in HopeForUA!
+      Thank you for your interest in UnitedHope!
       
       Best regards,
-      The HopeForUA Team
+      The UnitedHope Team
       
-      HopeForUA Foundation
-      Email: hopeeforua@gmail.com | Phone: +12136096521
+      UnitedHope Foundation
+      Email: admin@unitedhopefoundation.com | Phone: +12136096521
     `,
   }),
 
   contactFormSubmission: (name: string, email: string, subject: string, message: string) => ({
     // Email to the user (confirmation)
     userConfirmation: {
-      subject: 'We Received Your Message - HopeForUA',
+      subject: 'We Received Your Message - UnitedHope',
       html: `
         <!DOCTYPE html>
         <html>
@@ -199,13 +199,13 @@ export const emailTemplates = {
           <body>
             <div class="container">
               <div class="header">
-                <h1>HopeForUA</h1>
+                <h1>UnitedHope</h1>
                 <p>We Received Your Message</p>
               </div>
               <div class="content">
                 <p>Dear ${name},</p>
                 
-                <p>Thank you for contacting HopeForUA. We have received your message and will get back to you as soon as possible.</p>
+                <p>Thank you for contacting UnitedHope. We have received your message and will get back to you as soon as possible.</p>
                 
                 <div class="message-box">
                   <p style="margin: 0;"><strong>Your Message:</strong></p>
@@ -215,15 +215,15 @@ export const emailTemplates = {
                 
                 <p>Our team typically responds within 24-48 hours. If your inquiry is urgent, please feel free to call us at +12136096521.</p>
                 
-                <p>We appreciate your interest in HopeForUA and look forward to assisting you.</p>
+                <p>We appreciate your interest in UnitedHope and look forward to assisting you.</p>
                 
                 <p>Best regards,<br>
-                <strong>The HopeForUA Team</strong></p>
+                <strong>The UnitedHope Team</strong></p>
                 
                 <div class="footer">
-                  <p>HopeForUA Foundation</p>
-                  <p>Email: hopeeforua@gmail.com | Phone: +12136096521</p>
-                  <p>&copy; ${new Date().getFullYear()} HopeForUA. All rights reserved.</p>
+                  <p>UnitedHope Foundation</p>
+                  <p>Email: admin@unitedhopefoundation.com | Phone: +12136096521</p>
+                  <p>&copy; ${new Date().getFullYear()} UnitedHope. All rights reserved.</p>
                 </div>
               </div>
             </div>
@@ -231,11 +231,11 @@ export const emailTemplates = {
         </html>
       `,
       text: `
-        We Received Your Message - HopeForUA
+        We Received Your Message - UnitedHope
         
         Dear ${name},
         
-        Thank you for contacting HopeForUA. We have received your message and will get back to you as soon as possible.
+        Thank you for contacting UnitedHope. We have received your message and will get back to you as soon as possible.
         
         Your Message:
         Subject: ${subject}
@@ -243,13 +243,13 @@ export const emailTemplates = {
         
         Our team typically responds within 24-48 hours. If your inquiry is urgent, please feel free to call us at +12136096521.
         
-        We appreciate your interest in HopeForUA and look forward to assisting you.
+        We appreciate your interest in UnitedHope and look forward to assisting you.
         
         Best regards,
-        The HopeForUA Team
+        The UnitedHope Team
         
-        HopeForUA Foundation
-        Email: hopeeforua@gmail.com | Phone: +12136096521
+        UnitedHope Foundation
+        Email: admin@unitedhopefoundation.com | Phone: +12136096521
       `,
     },
     // Email to admin (notification)
@@ -273,7 +273,7 @@ export const emailTemplates = {
             <div class="container">
               <div class="header">
                 <h1>New Contact Form Submission</h1>
-                <p>HopeForUA Website</p>
+                <p>UnitedHope Website</p>
               </div>
               <div class="content">
                 <p>A new contact form submission has been received:</p>
@@ -289,8 +289,8 @@ export const emailTemplates = {
                 <p>Please respond to this inquiry as soon as possible.</p>
                 
                 <div class="footer">
-                  <p>HopeForUA Foundation</p>
-                  <p>Email: hopeeforua@gmail.com | Phone: +12136096521</p>
+                  <p>UnitedHope Foundation</p>
+                  <p>Email: admin@unitedhopefoundation.com | Phone: +12136096521</p>
                 </div>
               </div>
             </div>
@@ -298,7 +298,7 @@ export const emailTemplates = {
         </html>
       `,
       text: `
-        New Contact Form Submission - HopeForUA
+        New Contact Form Submission - UnitedHope
         
         A new contact form submission has been received:
         
@@ -327,7 +327,7 @@ export const sendEmail = async (
     }
 
     const mailOptions = {
-      from: `"HopeForUA" <${process.env.SMTP_EMAIL}>`,
+      from: `"UnitedHope" <${process.env.SMTP_EMAIL}>`,
       to,
       subject,
       html,
@@ -378,7 +378,7 @@ export const sendContactFormEmails = async (
   );
 
   // Send notification to admin
-  const adminEmail = process.env.ADMIN_EMAIL || 'hopeeforua@gmail.com';
+  const adminEmail = process.env.ADMIN_EMAIL || 'admin@unitedhopefoundation.com';
   const adminResult = await sendEmail(
     adminEmail,
     templates.adminNotification.subject,
